@@ -87,3 +87,55 @@ img {
 /**
  * YOUR CODE HERE
  */
+
+
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+form {
+    position: relative;
+    & > div {
+        margin-right: 3rem;
+        input {
+            width: 100%;
+        }
+    }
+    button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 2.5rem;
+        line-height: 1.25rem;
+    }
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+    li {
+        border-bottom: 1px solid #aaa;
+        background: #efefef;
+        position: relative;
+        & > input[type="checkbox"] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 1rem;
+            height: 1rem;
+            margin: .5rem;
+        }
+        p {
+            margin-left: .5rem
+        }
+        &.done {
+            background: #D6E8B2;
+            p {
+                text-decoration: line-through;
+                line-through-color: black;
+            }
+        }
+    }
+}
+
