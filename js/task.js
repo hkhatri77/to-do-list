@@ -1,7 +1,5 @@
-import Backbone from 'backbone'
-
-
-export const Task = Backbone.Model.extend({
+export const Task = Parse.Model.extend({
+    className: 'Task',
     defaults: {
         title: '(no title)',
         due_date: null,
@@ -11,6 +9,6 @@ export const Task = Backbone.Model.extend({
     }
 })
 
-export const Tasks = Backbone.Collection.extend({
+export const Tasks = Parse.Collection.extend({
     model: Task
 })
